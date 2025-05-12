@@ -33,7 +33,7 @@ user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 
 if user_choice < 0 or user_choice > 2:
     print("Invalid choice, You loose!")
 else:
-    print("You choose:")
+    print("You chose:")
     print(game_images[user_choice])
     
     computer_choice = random.randint(0,2)
@@ -46,9 +46,9 @@ else:
     elif user_choice == 0 and computer_choice == 2:
         print("You win!, rock beats scissors.")
     elif computer_choice == 0 and user_choice == 2:
-        print("You loose!, rock beats scissors.")
+        print("You lose!, rock beats scissors.")
     elif computer_choice > user_choice:
-        print("You loose!")
+        print("You lose!")
     elif user_choice > computer_choice:
         print("You win!")
                                                   
